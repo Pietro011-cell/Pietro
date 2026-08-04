@@ -1,36 +1,126 @@
-body {
-    background-color:#f4f4f4;
-    color: #555555;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
-    min-height: 100vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-fieldset {
-    border-radius: 20px;
-    border: solid;
-}
-#enviar {
-    border-radius: 50px;
 
+/* Corpo */
+body{
+    background: linear-gradient(135deg,#74b9ff,#dfe6e9);
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2d3436;
+    text-align:center;
+    padding:30px;
 }
-#enviar:hover {
-    border-radius: 10px;
-    padding: 5px;
-    background-color: blue;
-    color: white;
+
+/* Caixa principal */
+body{
+    max-width:1000px;
+    margin:auto;
 }
-h1 {
-    text-align: center;
+
+/* Títulos */
+h1{
+    color:#0d47a1;
+    font-size:45px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.2);
 }
-h3 {
-    text-align: center;
+
+h2,h3,h4{
+    margin:20px 0;
+    color:#1e3799;
 }
-h4 {
-    text-align: center;
+
+/* Parágrafo */
+p{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    line-height:1.8;
+    font-size:18px;
+    margin:20px auto;
+    max-width:850px;
 }
-input {
-    border-radius: 20px;
+
+/* Foto */
+img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    margin:25px;
+    transition:.5s;
 }
-footer {
-    margin-top: auto;
+
+img:hover{
+    transform:scale(1.08) rotate(3deg);
+}
+
+/* Lista */
+ul{
+    list-style:none;
+    margin:20px auto;
+    max-width:500px;
+}
+
+ul li{
+    background:white;
+    margin:12px 0;
+    padding:15px;
+    border-left:8px solid #0984e3;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    text-align:left;
+}
+
+/* Links */
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#0984e3;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+a:hover{
+    background:#0652DD;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+/* Linha separadora */
+h4::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:#0984e3;
+    margin:10px auto;
+    border-radius:10px;
+}
+
+/* Responsivo */
+@media(max-width:768px){
+
+    h1{
+        font-size:32px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    img{
+        width:220px;
+        height:220px;
+    }
 }
