@@ -21,14 +21,17 @@ body{
 
 /* Títulos */
 h1{
-    color:#0d47a1;
+    color:#0a2449;
     font-size:45px;
     margin-bottom:20px;
     text-transform:uppercase;
     text-shadow:2px 2px 5px rgba(0,0,0,0.2);
 }
-
-h2,h3,h4{
+h2 {
+    margin:20px 0 ;
+    color: #162870;
+}
+h3,h4{
     margin:20px 0;
     color:#1e3799;
 }
@@ -123,4 +126,51 @@ h4::after{
         width:220px;
         height:220px;
     }
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+table th {
+    background: #0984e3;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+table tr:hover {
+    background: #dfe6e9;
+}
+
+table a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 15px;
+    background: #0984e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+table a:hover {
+    background: #0652DD;
 }
