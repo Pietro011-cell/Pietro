@@ -1,70 +1,86 @@
-<html>
+<html lang="pt-BR">
+
 <head>
-<title> meu site </title>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style_pietro.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal — Seu Nome</title>
+  <!-- Salve o tema escolhido como "estilo.css" (mesma pasta deste arquivo) -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- <h1>  Pietro Lucas dos Santos Lima</h1>
- 
-<img src='foto Media.jpg 'class="imagem" width="400" height="300" alt="minha foto"/>
+  <div class="pagina">
 
-<h2>informações pessoais</h2>
+    <!-- ====== CABEÇALHO — TROQUE pelo seu nome e sua frase ====== -->
+    <header class="cabecalho">
+      <h1><b>Pietro Lucas</b></h1>
+      <p>Estudante de Sistemas de Informação · IFAL</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main class="principal">
+      <section id="sobre" class="cartao">
+        <h2>Sobre mim</h2>
+        <!-- TROQUE por uma breve apresentação sua -->
+        <p>Me chamo Pietro tenho 15 anos, estudo no ifal e estou no meu primeiro ano do ensino medio, Aqui no ifal, consegui entar no time de futsal e faço desenvolvimento de sistemas, dentro da area prfiro a parte de estilizaçao dos sites.</p>
+      </section>
 
-<h3>nasci no dia 15/01/2011, em maceio alagoas</h3>
+      <section id="projetos" class="cartao">
+        <h2>Projetos</h2>
+        <!-- Galeria com Grid: cada .projeto é um card; adicione/remova à vontade -->
+        <div class="projetos">
+          <article class="projeto">
+            <h3>Projeto 1</h3>
+            <p>Site de cadastro</p>
+            <td><a href="https://pietro011-cell.github.io/Cadastro/" target="_blank">Verificar</a></td>
+        
+          </article>
+          <article class="projeto">
+            <h3>Projeto 2</h3>
+            <p>Inscriçoes para cursos do senac .</p>
+            <td><a href="https://pietro011-cell.github.io/Vitor-e-eu" target="_blank">Verificar</a></td>
+          </article>
+          <article class="projeto">
+            <h3>Projeto 3</h3>
+            <p>Refatoração de site.</p>
+            <td><a href="https://pietro011-cell.github.io/Refatora-ao/" target="_blank">Verificar</a></td>
+          </article>
+        </div>
+      </section>
+    </main>
 
+    <!-- ====== BARRA LATERAL ====== -->
+    <aside class="lateral">
+      <section class="cartao">
+        <h2>Habilidades</h2>
+        <!-- TROQUE pelas suas habilidades -->
+        <ul class="habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Grid</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
 
-<p> estou no meu primeiro ano no ifal, ou seja sou calouro de desenvolvimento de sistemas, sou da turma 911c 
- todos nos somos novos no curso. Eu tenho 15 anos recem completados, gosto de jogar futebol desde pequeno, nao so futebol, mas  quase todos os esportes, nao sou o melhor em nenhum mais consigo jogar a maioria. ja li alguns livros meu preferido foi pequeno principe. nao gosto muito de ler prefiro filmes e jogos mas e bom de quebrar a rotina. </p>
+      <section id="contato" class="cartao">
+        <h2>Contato</h2>
+        <!-- TROQUE pelos seus links -->
+        <ul class="contato">
+          <li>✉️ <a href="mailto:plsl1@aluno.ifal.edu.br">plsl1@aluno.ifal.edu.br</a></li>
+          <li>🐙 <a href="https://github.com/pietro011-cell">github.com/pietro011-cell</a></li>
+        </ul>
+      </section>
+    </aside>
 
+    <!-- ====== RODAPÉ — TROQUE o nome ====== -->
+    <footer class="rodape">© Isso é tudo por hoje</footer>
 
-
-<h4>um pouco do meu conhecimento do curso </h4>
-
-
-<ul> 
- <li>software e hadware </li>
- <li>java-scrypt </li>
- <li>github </li>
- <li>html</li>
- <li>css</li>
- </ul>
-
-		<a href='https://www2.ifal.edu.br/' target='_blank'> e um curso muito bom vem em crescente e lhe entrega uma base para qualquer area em que deseja futuramente. venha visitar o if.</a> </li>
-
-	
-	<h2>Atividades 2º Bimestre</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>Atividade</th>
-            <th>Link</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Capitulo 03 - cadastro</td>
-            <td><a href="https://pietro011-cell.github.io/Cadastro/" target="_blank">Acessar</a></td>
-        </tr>
-        <tr>
-            <td>Atividade CSS 01 - trabalho em dupla</td>
-            <td><a href="https://pietro011-cell.github.io/Vitor-e-eu" target="_blank">Acessar</a></td>
-        </tr>
-        <tr>
-            <td>Atividade CSS 02 - refatoração </td>
-            <td><a href="https://pietro011-cell.github.io/Refatora-ao/" target="_blank">Acessar</a></td>
-        </tr>
-    </tbody>
-</table>
-	
-
-
-
+  </div>
 </body>
 
-
-	</html>
+</html>
